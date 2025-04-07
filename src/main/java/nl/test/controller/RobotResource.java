@@ -1,4 +1,4 @@
-package nl.test;
+package nl.test.controller;
 
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
@@ -6,7 +6,7 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/hello")
-public class GreetingResource {
+public class RobotResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
