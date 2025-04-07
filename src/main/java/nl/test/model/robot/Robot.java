@@ -1,4 +1,4 @@
-package nl.test.model.interfaces;
+package nl.test.model.robot;
 
 public interface Robot {
     void statePurpose();

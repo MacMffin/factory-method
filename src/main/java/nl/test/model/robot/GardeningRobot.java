@@ -1,7 +1,6 @@
-package nl.test.model.impl;
+package nl.test.model.robot;
 
 import lombok.extern.slf4j.Slf4j;
-import nl.test.model.interfaces.Robot;
 
 @Slf4j
 public class GardeningRobot implements Robot {
