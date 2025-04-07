@@ -1,4 +1,4 @@
-package nl.test.service.robotcreator;
+package nl.test.service.helper;
 
 import jakarta.enterprise.context.ApplicationScoped;
 import nl.test.model.annotations.Gardener;
@@ -7,7 +7,7 @@ import nl.test.model.robot.Robot;
 
 @ApplicationScoped
 @Gardener
-public class GardeningRobotCreator extends RobotCreator {
+public class GardeningHelper extends Helper {
 
     @Override
     public Robot createRobot() {

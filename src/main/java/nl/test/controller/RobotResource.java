@@ -5,33 +5,30 @@ import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
 import nl.test.model.annotations.Cook;
 import nl.test.model.annotations.Gardener;
-import nl.test.model.robot.Robot;
-import nl.test.service.robotcreator.RobotCreator;
+import nl.test.service.helper.Helper;
 
 @Path("/robot")
 public class RobotResource {
 
     @Inject
     @Cook
-    RobotCreator cookingCreator;
+    Helper cookingHelp;
 
     @Inject
     @Gardener
-    RobotCreator gardenerCreator;
+    Helper gardeningHelp;
 
     @Path("/cook")
     @POST
     public void createCookingRobot() {
-        Robot robot = cookingCreator.createRobot();
-        robot.statePurpose();
-        robot.performAction();
+        cookingHelp.statePurpose();
+        cookingHelp.performAction();
     }
 
     @Path("/gardener")
     @POST
     public void createGardeningRobot() {
-        Robot robot = gardenerCreator.createRobot();
-        robot.statePurpose();
-        robot.performAction();
+        gardeningHelp.performAction();
+        gardeningHelp.statePurpose();
     }
 }
