@@ -1,4 +1,4 @@
-package nl.test.controller;
+package nl.test.controller.robot;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;
