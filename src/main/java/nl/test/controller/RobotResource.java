@@ -3,8 +3,8 @@ package nl.test.controller;
 import jakarta.inject.Inject;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
-import nl.test.model.annotations.Cook;
-import nl.test.model.annotations.Gardener;
+import nl.test.common.annotations.Cook;
+import nl.test.common.annotations.Gardener;
 import nl.test.service.helper.Helper;
 
 @Path("/robot")

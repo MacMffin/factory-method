@@ -1,7 +1,7 @@
 package nl.test.service.helper;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import nl.test.model.annotations.Gardener;
+import nl.test.common.annotations.Gardener;
 import nl.test.model.robot.GardeningRobot;
 import nl.test.model.robot.Robot;
 
